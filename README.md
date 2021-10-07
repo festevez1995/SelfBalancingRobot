@@ -1,1 +1,11 @@
-# SelfBalancingRobot
+# Self Balancing Robot
+For this project, I built a ball balancing robot using components such as the TouchPanel, Decoders, Motors and also use my knowledge to be able to determin controller gains in order to build a self ball balancing system. I began by evaluating a simplified model of a pivoting platform so that I can eventually design a controller to balance a ball ontop of a platform. Then I ran a simulation and tested a controller for the simplified model of the pivoting platform using python. After completing the calculations and simulation, I was finally ready to dive into coding. I began by interface with a 175mm x 100 mm resistive touch panel and had to create a touchpanel class that will be used for the final project. I were also tasked to have a total response time of less. than 1500 us. After running my resistive touch panel, my total resonse time was 904.8708 us. was not able to complete this project, but here are my results and I will also talk about my next steps, if given more time, for this project.
+
+#Tuned Values for Controller Gain
+My final conroller gain values used for this system is K = [90, -10, 75, -47]. In order for me to get these values, I started off with these K values, K = [-3.2839,-9,-9.0905,-3.9995]. I got these K values from a Piazza post in our ME405 channel. The way I aproched the controller gain tunning was that I isloated each K value. I ran a series of tests and depending on the results, I would tune my K values. You can see my youtube video for more information. Here are my results for my controller gain tunning:
+
+
+Note: The higlighted rows are the values chosen for my K = [K1, K2, K3, K4] In conclusion, all though I was not able to finish this project, I did learn alot about controlls. If I had more time, I would have found better ways to tune my controller gains. Also, I would have to look into tunning my duty cycle for the motros. As mentioned in the YouTube video, sometimes I would get values from a rang -300% to 1000% and this is a problem because we can't set a duty cycle for more than 100%. I did read a Piazza post that had a problem like mine and they multiplied their duty cycle by a factor of K_duty. This was said to be a conversion factor. Overall, this was a great learning experience and I want to keep on learning more.
+
+#Video Demonstration
+Youtube Link to demenstration: https://www.youtube.com/watch?v=PAT0s4L3Ai0
